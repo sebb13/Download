@@ -7,7 +7,7 @@
 			<input type="text" readonly id="file-{__FILE_ID__}" name="{__FILE_ID__}" value="{__FILE_NAME__}" class="form-control" />
 		</div>
 		<div class="col-md-2">
-			<input type="text" name="copy-{__FILE_ID__}" id="copy-{__FILE_ID__}" value="{##FRONT_URL##}{##LANG##}/downloadFile.html?file_id={__FILE_ID__}" class="form-control" />
+			<input type="text" name="copy-{__FILE_ID__}" id="copy-{__FILE_ID__}" value="/{##LANG##}/downloadFile.html?file_id={__FILE_ID__}" class="form-control" />
 		</div>
 	</div>
 </div>
@@ -17,7 +17,7 @@
 	</button>
 </div>
 <div class="col-md-1">
-	<a href="{##FRONT_URL##}{##LANG##}/downloadFile.html?file_id={__FILE_ID__}">
+	<a href="/{##LANG##}/downloadFile.html?file_id={__FILE_ID__}">
 		<button type="button" class="btn btn-success btn-sm">
 			<span class="glyphicon glyphicon-download"></span>
 		</button>
