@@ -50,7 +50,7 @@ final class DownloadMgr {
 			if (!isset($sFileId) 
 				|| !array_key_exists($sFileId, $this->aFiles) 
 				|| !file_exists($this->sFilesPath.$this->aFiles[$sFileId])) {
-					UserRequest::setRequest(array('sPage'=>'404'));
+					UserRequest::setRequest(array('sPage'=>'404', 'sLang'=>DEFAULT_LANG));
 					return true;
 			}
 			$sFilePath = $this->sFilesPath.$this->aFiles[$sFileId];
